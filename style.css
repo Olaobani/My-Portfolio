@@ -1,0 +1,382 @@
+/*default browser reset code*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* THIS IS WHERE MY STYLING STARTS */
+/* protfoliocard first page */
+    .wholepage {
+        display: flex;
+    }
+    .firtcoloumn {
+        flex: 1;
+        height: 100%;
+        margin:  auto 0%;
+        padding: 0px 50px 0px 100px;
+    }
+    .secondcolumn {
+        flex: 1;
+        /* to make the height perfect */
+        height: calc(100vh - 1px);
+        background-image: url(image/ola.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    h2{
+        font-size: 30px;
+        font-family: "catamaran";
+        padding-bottom: 15px;
+        font-weight: 800;
+    }
+    h1{
+        font-size: 45px;
+        font-family: "catamaran";
+        padding-bottom: 10px;
+        font-weight: 900;
+    }
+    h1 span{
+        color: wheat;
+        font-weight: 600;
+        /* how to add outline */
+        text-shadow:
+        -2px -2px 0 #ffc400,  
+        2px -2px 0 #ffc400,
+        -2px 2px 0 #ffc400,
+        2px 2px 0 #ffc400;
+    }
+    h3 {
+        font-family: "catamaran";
+        background-color: #ffc400;
+        padding: 8px;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 6px   ;
+    }
+    p {
+        padding: 30px 0px;
+        font-size: 15px;
+        font-family: "cabin";
+        line-height: 30px;
+    }
+    button {
+        font-family: "catamaran";
+        font-weight: 700;
+        background-color: #ffc400;
+        padding: 6px;
+        width: fit-content;
+        height: fit-content;
+        border: 2px solid wheat;
+        border-radius: 18px;
+        transition: transform 0.3s ease;
+    }
+    button:hover{
+        transform: scale(1.07);;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        
+    }
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        margin: 30% 3% 50% auto;
+        background-color: #ffc400;
+        gap: 20px;
+        padding: 40px 8px;
+        width: fit-content;
+        border-radius: 20px;
+    }
+    .icona {
+        transition: transform 0.3s ease;
+    }
+    .icona:hover {
+        transform: scale(1.3);;
+    }
+    .svg {
+        fill: black;
+        transition: fill 0.3s ease;
+    }
+    .svg:hover {
+        fill: white;
+      }
+      /* styling for about me page */
+      .maincolumn1{
+        flex: 3;
+      }
+      .maincolumn2{
+        flex: 8;
+        background-color: #cccccc;
+      }
+      .maincolumn3{
+        flex: 1;
+        background-color: #cccccc;
+      }
+     img{
+        height: 250px;
+        width:420px;
+     }
+      .aboutme{
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        font-family: "catamaran";
+        font-weight: 800;
+        background-color: #ffc400;line-height: 57px;
+        padding: 20px 20px;
+      }
+    .h{
+        margin: 40px 0px 0px 80px;       
+      }
+      .h h1{
+        font-family: "catamaran";
+        text-align: center;
+        border: 1px solid #000;
+        font-size: 70px;
+        padding: 16px 0;
+      }
+      .abouticons {
+        display: flex;
+        flex-direction: column;
+        margin: 140% auto 0% auto;
+        background-color: #ffc400;
+        gap: 20px;
+        padding: 40px 8px;
+        width: fit-content;
+        border-radius: 20px;
+    }
+    .h article{
+        font-family: "catamaran" ;
+        padding: 30px 0px 20px 0px;
+        font-size: 27px;
+
+    }
+    article span{
+        font-weight: 900;
+    }
+    section{
+        padding: 0px 0px 20px 0px;
+        line-height: 30px;
+        text-align: justify;
+        font-family: "catamaran";
+    }
+    .lastdiv{
+        display: flex;
+    }
+    .left-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 20px 10px 80px;
+        justify-content: space-between;
+        width: 400px; 
+        height: 275px;
+        padding: 10px;
+        background-color: #000;
+    }
+    .item1{
+        width: calc(50% - 10px);
+        height: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin: auto 0%;
+    }
+    .item1 p{
+    padding-top: 2px;
+    }
+    .item1 h1{
+        padding-top: 12px;
+    }
+    .item2{
+        width: calc(50% - 10px);
+        height: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin: auto 0%;
+        border-bottom: 1px solid gray;
+        border-left: 1px solid gray;
+        border-radius: 5px;
+        padding-left: 19px;
+        padding-top: 15px;
+        border-radius: 5px;
+    }
+    .item2 p{
+        padding-top: 0px;
+        }
+    .item3{
+        width: calc(50% - 10px);
+        height: calc(50% - 20px);
+        margin: auto 0%;  
+        border-right: 1px solid gray;  
+        border-top: 1px solid gray;  
+        border-radius: 5px;
+        padding-top: 30px;
+    
+    }
+    .item3 p{
+        padding-top: 7px;
+    }
+    .item4{
+        width: calc(50% - 10px);
+        height: calc(50% - 70px);
+        margin: auto 0%; 
+    }
+    .item4 p{
+        padding-top: 0px;
+    }
+    
+    .left-container  p{
+        font-family: "catamaran";
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .left-container  h1{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: "catamaran";
+        text-align: center;
+        color: #ffa600;
+    }
+    .whatido{
+        flex: 5;
+    }
+    .whatidotext{
+        font-family: "catamaran";
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .rrr{
+        display: flex;
+    }
+    .images{
+        margin: 18px;
+        display: flex;
+        flex-flow: column;
+        gap: 30px;
+    }
+    .camera{
+        width: 50px;
+        height: 50px;
+    }
+    .cassette{
+        width: 50px;
+        height: 50px;
+    }
+    .ballpen{
+        width: 50px;
+        height: 50px;
+    }
+    .imagedescription{
+        display: flex;
+        flex-flow: row wrap;
+        font-family: "catamaran";
+        line-height: 20px;
+        font-size: 15px;
+        text-align: justify;
+    }
+.w{
+    font-family: "catamaran";
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.x{
+    padding-top: 12px;
+    font-weight: bold;
+}
